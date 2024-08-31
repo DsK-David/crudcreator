@@ -1,5 +1,3 @@
-crudgen localhost DsK-David 2513 TesteCrudGem cliente clientes
-
 ```markdown
 # CRUD Generator CLI
 
@@ -18,8 +16,9 @@ Um CLI (Interface de Linha de Comando) para gerar automaticamente um CRUD (Creat
 
    Primeiro, clone o repositório do projeto:
 
-   ```bash
+   ```
    git clone https://github.com/seuusuario/crud-generator-cli.git
+   ```
    ```
 
 2. **Navegue até o Diretório do Projeto**
@@ -125,3 +124,4 @@ Para adicionar o pacote ao npm registry, você precisa fazer o login no npm (se 
    ```
 
 Certifique-se de atualizar o número da versão no `package.json` antes de publicar uma nova versão.
+```
