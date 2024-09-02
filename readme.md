@@ -1,6 +1,6 @@
  ---
 
-# CRUDGEN CLI
+# CRUDCREATOR CLI
 
 Uma CLI (Interface de Linha de Comando) para gerar automaticamente um CRUD completo para APIs em Node.js utilizando Knex.js e Express. Este projeto acelera o desenvolvimento, criando rapidamente rotas, controladores e modelos para operações CRUD básicas.
 
@@ -18,10 +18,10 @@ Uma CLI (Interface de Linha de Comando) para gerar automaticamente um CRUD compl
 Clone o repositório do projeto para sua máquina local:
 
 ```bash
-git clone https://github.com/DsK-David/crudgen.git
+git clone https://github.com/DsK-David/crudcreator.git
 ```
 ```bash
-npm install crudgen -g
+npm install crudcreator -g
 ```
 
 ### 2. Acesse o Diretório do Projeto
@@ -29,7 +29,7 @@ npm install crudgen -g
 Navegue até o diretório do projeto:
 
 ```bash
-cd crudgen
+cd crudcreator
 ```
 
 ### 3. Instale as Dependências
@@ -53,7 +53,7 @@ npm install -g .
 Depois de instalada, a CLI pode ser usada para gerar um CRUD completo para sua API com o comando:
 
 ```bash
-crudgen <host> <user> <password> <database> <modelName> <tableName>
+crudcreator <host> <user> <password> <database> <modelName> <tableName>
 ```
 
 ### Parâmetros
@@ -70,7 +70,7 @@ crudgen <host> <user> <password> <database> <modelName> <tableName>
 Para gerar um CRUD para a tabela `users` com um modelo chamado `User`, execute:
 
 ```bash
-crudgen localhost root password mydatabase User users
+crudcreator localhost root password mydatabase User users
 ```
 
 ## Estrutura do Projeto

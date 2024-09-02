@@ -12,7 +12,7 @@ import showLoadingAnimation from "./utils/showLoadingAnimation.js";
 const args = process.argv.slice(2);
 if (args.length < 6) {
   console.error(
-    "Uso: crudgen <host> <user> <password> <database> <modelName> <tableName>"
+    "Uso: crudcreator <host> <user> <password> <database> <modelName> <tableName>"
   );
   process.exit(1);
 }

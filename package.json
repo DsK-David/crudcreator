@@ -1,14 +1,14 @@
 {
-  "name": "crudgen",
+  "name": "crudcreator",
   "version": "1.0.0",
   "description": "",
-  "main": "crudgen.js",
+  "main": "crudcreator.js",
   "type": "module",
   "bin": {
-    "crudgen": "./crudgen.js"
+    "crudcreator": "./crudcreator.js"
   },
   "scripts": {
-    "start": "node generator.js"
+    "start": "node crudcreator.js"
   },
   "keywords": [],
   "author": "",
