@@ -1,51 +1,56 @@
-```markdown
-# CRUD Generator CLI
+ ---
 
-Um CLI (Interface de Linha de Comando) para gerar automaticamente um CRUD (Create, Read, Update, Delete) completo para uma API em Node.js com Knex.js e Express. Este projeto facilita a criação rápida de rotas, controladores e modelos para operações CRUD básicas.
+# CRUDGEN CLI
+
+Uma CLI (Interface de Linha de Comando) para gerar automaticamente um CRUD completo para APIs em Node.js utilizando Knex.js e Express. Este projeto acelera o desenvolvimento, criando rapidamente rotas, controladores e modelos para operações CRUD básicas.
 
 ## Funcionalidades
 
-- Gera automaticamente as rotas, controladores e modelos necessários para uma API CRUD.
-- Cria um arquivo de configuração do Knex.js.
-- Adiciona as novas rotas ao arquivo `index.js` da aplicação.
-- Exibe uma animação de loading enquanto o CRUD está sendo gerado.
+- **Geração Automática:** Cria rotas, controladores e modelos para uma API CRUD em segundos.
+- **Configuração do Knex.js:** Gera automaticamente o arquivo de configuração do Knex.js.
+- **Integração Simplificada:** Adiciona as novas rotas ao arquivo `index.js` da aplicação.
+- **Feedback Visual:** Exibe uma animação de loading enquanto o CRUD está sendo gerado, proporcionando uma experiência de uso amigável.
 
 ## Instalação
 
-1. **Clone o Repositório**
+### 1. Clone o Repositório
 
-   Primeiro, clone o repositório do projeto:
+Clone o repositório do projeto para sua máquina local:
 
-   ```
-   git clone https://github.com/seuusuario/crud-generator-cli.git
-   ```
-   ```
+```bash
+git clone https://github.com/DsK-David/crudgen.git
+```
+```bash
+npm install crudgen -g
+```
 
-2. **Navegue até o Diretório do Projeto**
+### 2. Acesse o Diretório do Projeto
 
-   ```bash
-   cd crud-generator-cli
-   ```
+Navegue até o diretório do projeto:
 
-3. **Instale as Dependências**
+```bash
+cd crudgen
+```
 
-   Instale as dependências do projeto:
+### 3. Instale as Dependências
 
-   ```bash
-   npm install
-   ```
+Instale todas as dependências necessárias:
 
-4. **Instale o CLI Globalmente**
+```bash
+npm install
+```
 
-   Para instalar o CLI globalmente no seu sistema e poder usá-lo em qualquer lugar, execute:
+### 4. Instale o CLI Globalmente
 
-   ```bash
-   npm install -g .
-   ```
+Para usar a CLI em qualquer lugar do seu sistema, instale-a globalmente:
+
+```bash
+npm install -g .
+```
 
 ## Uso
 
-Após a instalação, você pode usar o CLI para gerar um CRUD completo para sua API. O comando básico é:
+Depois de instalada, a CLI pode ser usada para gerar um CRUD completo para sua API com o comando:
 
 ```bash
 crudgen <host> <user> <password> <database> <modelName> <tableName>
@@ -53,16 +58,16 @@ crudgen <host> <user> <password> <database> <modelName> <tableName>
 
 ### Parâmetros
 
-- `<host>`: O host do banco de dados MySQL.
-- `<user>`: O nome de usuário do banco de dados MySQL.
-- `<password>`: A senha do banco de dados MySQL.
-- `<database>`: O nome do banco de dados MySQL.
-- `<modelName>`: O nome do modelo que será criado (por exemplo, `User`).
-- `<tableName>`: O nome da tabela no banco de dados MySQL (por exemplo, `users`).
+- **`<host>`**: O host do banco de dados MySQL.
+- **`<user>`**: O nome de usuário do banco de dados MySQL.
+- **`<password>`**: A senha do banco de dados MySQL.
+- **`<database>`**: O nome do banco de dados MySQL.
+- **`<modelName>`**: O nome do modelo a ser criado (ex: `User`).
+- **`<tableName>`**: O nome da tabela no banco de dados MySQL (ex: `users`).
 
-### Exemplo
+### Exemplo de Uso
 
-Para gerar um CRUD para uma tabela `users` com um modelo chamado `User`, você pode usar o comando:
+Para gerar um CRUD para a tabela `users` com um modelo chamado `User`, execute:
 
 ```bash
 crudgen localhost root password mydatabase User users
@@ -70,7 +75,7 @@ crudgen localhost root password mydatabase User users
 
 ## Estrutura do Projeto
 
-Após a execução do comando, a seguinte estrutura de diretórios será criada:
+Ao executar o comando, a seguinte estrutura de diretórios será criada:
 
 ```
 crud/
@@ -84,15 +89,21 @@ crud/
   └── index.js
 ```
 
-- **`controllers/`**: Contém o controlador com métodos para manipular a tabela.
-- **`models/`**: Contém o modelo com métodos para realizar operações CRUD na tabela.
-- **`routes/`**: Contém as rotas da API para acessar os métodos do controlador.
+- **`controllers/`**: Contém os controladores com métodos para manipular as tabelas.
+- **`models/`**: Contém os modelos com métodos para realizar operações CRUD nas tabelas.
+- **`routes/`**: Contém as rotas da API para acessar os métodos dos controladores.
 - **`knexfile.js`**: Arquivo de configuração do Knex.js.
-- **`index.js`**: Arquivo principal da aplicação onde as rotas são registradas.
+- **`index.js`**: Arquivo principal onde as rotas são registradas.
 
 ## Contribuição
 
-Sinta-se à vontade para contribuir com melhorias! Para isso, faça um fork do repositório, crie uma branch com suas alterações e envie um pull request.
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para suas alterações (`git checkout -b feature/sua-feature`).
+3. Commit suas alterações (`git commit -m 'Adiciona nova funcionalidade'`).
+4. Envie para a branch (`git push origin feature/sua-feature`).
+5. Abra um pull request.
 
 ## Licença
 
@@ -100,28 +111,36 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ## Contato
 
-Para mais informações ou dúvidas, entre em contato com [seuemail@dominio.com](mailto:da33.veiga@gmail.com).
+Se tiver alguma dúvida ou sugestão, entre em contato através do e-mail [da33.veiga@gmail.com](mailto:da33.veiga@gmail.com).
+
+## Publicação no NPM
+
+### Instalação Global
+
+Depois de instalar o projeto localmente, você pode instalar o CLI globalmente com:
+
+```bash
+npm install -g .
 ```
 
-### Instruções para o NPM
-- **Instalação Global**: Após a instalação do projeto com `npm install`, você pode instalar o CLI globalmente com `npm install -g .`, onde `.` refere-se ao diretório atual. Isso permitirá que você use o comando `crudgen` de qualquer lugar no terminal.
+### Publicando no NPM Registry
 
-### Adicionar ao NPM Registry
-Para adicionar o pacote ao npm registry, você precisa fazer o login no npm (se ainda não estiver logado) e publicar o pacote:
+1. **Login no NPM**
 
-1. **Faça o Login no NPM**
+   Faça o login na sua conta do NPM:
 
    ```bash
    npm login
    ```
 
-2. **Publique o Pacote**
+2. **Publicação do Pacote**
 
-   Certifique-se de estar na raiz do diretório do projeto e execute:
+   Certifique-se de estar no diretório raiz do projeto e execute:
 
    ```bash
    npm publish
    ```
 
-Certifique-se de atualizar o número da versão no `package.json` antes de publicar uma nova versão.
-```
+**Nota:** Não se esqueça de atualizar o número da versão no `package.json` antes de publicar uma nova versão.
+
+---
